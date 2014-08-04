@@ -1,0 +1,28 @@
+{
+  "name": "bobbieq-api",
+  "version": "0.0.0",
+  "description": "TODO",
+  "main": "-",
+  "dependencies": {},
+  "devDependencies": {
+    "gulp": "^3.8.7",
+    "gulp-shell": "^0.2.9"
+  },
+  "scripts": {
+    "test": "go test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/LeonB/bobbieq-api"
+  },
+  "keywords": [
+    "golang",
+    "queue"
+  ],
+  "author": "Leon Bogaert",
+  "license": "TODO",
+  "bugs": {
+    "url": "https://github.com/LeonB/bobbieq-api/issues"
+  },
+  "homepage": "https://github.com/LeonB/bobbieq-api"
+}
