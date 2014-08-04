@@ -1,0 +1,15 @@
+---
+
+# Steps:
+# ssh-copy-id ubuntu@dev.local
+# ansible-playbook laravel-dev.yml -i "dev.local," -K
+
+# Every time after the initial setup (if the sudo role is installed, you can
+# ommit the `-K` flag
+
+- hosts: all
+  pre_tasks:
+    - apt: update_cache=yes cache_valid_time=3600
+  roles:
+    - { role: beanstalkd, tags: ['beanstalkd'] }
+    # - { role: beanstalk-console, tags: ['beanstalk-console'] }

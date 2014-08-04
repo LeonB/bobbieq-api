@@ -1,0 +1,10 @@
+---
+
+- name: install beanstalkd
+  apt: pkg=beanstalkd
+
+- name: install /etc/default/beanstalkd
+  template: src=beanstalkd.default
+    dest=/etc/default/beanstalkd
+    owner=root group=root mode=0444
+  notify: restart beanstalkd
